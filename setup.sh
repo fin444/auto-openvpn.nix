@@ -54,7 +54,7 @@ function revokeUser() {
 }
 
 # initialize server
-if [[ ! -d "/etc/auto-openvpn" ]]; then
+if [[ ! -f "/etc/auto-openvpn/vars" ]]; then
 	mkdir -p /etc/auto-openvpn/users /etc/auto-openvpn/ccd /var/log/openvpn
 	cd /etc/auto-openvpn
 	genPKI
